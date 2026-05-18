@@ -1,0 +1,112 @@
+//include mixing to convert hexToRGB
+@import "common/mixing.scss";
+@function hexToRGB($color) {
+	@return red($color), green($color), blue($color);
+}
+
+body.green-mode{
+	//main theme colors
+	$theme-color1: #966650;
+	$theme-color2: #020214;
+	$theme-color3: #eaede4;
+	$theme-color4: #121212;
+	$theme-color5: #050505;
+
+	//text colors when theme color bg
+	$theme-color1-text-color: #fff;
+	$theme-color2-text-color: #fff;
+	$theme-color3-text-color: #020214;
+	$theme-color4-text-color: #fff;
+	$theme-color5-text-color: #fff;
+
+
+	//main theme colors
+	--theme-color1: #{$theme-color1};
+	--theme-color2: #{$theme-color2};
+	--theme-color3: #{$theme-color3};
+	--theme-color4: #{$theme-color4};
+	--theme-color5: #{$theme-color5};
+	--theme-color-dark: #{$theme-color4};
+	--theme-color-dark2: #{$theme-color5};
+
+	//rgb version of those theme colors
+	--theme-color1-rgb: #{hexToRGB($theme-color1)};
+	--theme-color2-rgb: #{hexToRGB($theme-color2)};
+	--theme-color3-rgb: #{hexToRGB($theme-color3)};
+	--theme-color4-rgb: #{hexToRGB($theme-color4)};
+
+	--theme-color-gray: var(--theme-color3);
+
+	//text colors when theme color bg
+	--theme-color1-text-color: #{$theme-color1-text-color};
+	--theme-color2-text-color: #{$theme-color2-text-color};
+	--theme-color3-text-color: #{$theme-color3-text-color};
+	--theme-color4-text-color: #{$theme-color4-text-color};
+	--theme-color5-text-color: #{$theme-color5-text-color};
+
+	//font family
+	--heading-font-family: "MangoGrotesque", sans-serif;
+
+	//body
+	--body-font-size: 18px;
+	--body-line-height: 28px;
+	--body-font-weight: 400;
+
+	//heading font size + line-height + weight
+	--h1-font-size: 200px;
+	--h2-font-size: 140px;
+	--h3-font-size: 50px;
+	--h4-font-size: 24px;
+	--h5-font-size: 18px;
+	--h6-font-size: 16px;
+
+	--h1-font-weight: 500;
+	--h2-font-weight: 500;
+
+	--h3-font-weight: 500;
+	--h4-font-weight: 500;
+
+	//container
+	--container-width: 1744px;
+	--large-container-width: 1760px;
+
+.header-menu {
+	background-color: rgba(var(--theme-color-white-rgb), 0.08);
+}
+.main-menu .navigation > li > a,
+.main-menu .navigation > li > ul > li > a,
+.main-footer .widget-title {
+	font-family: var(--body-font-family);
+}
+.color1 {
+	color: var(--theme-color1);
+}
+@media (min-width: 1400px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: var(--container-width);
+	}
+}
+@font-face {
+	font-display: swap;
+	font-family: "MangoGrotesque";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/MangoGrotesque/MangoGrotesque-Regular.woff2")
+		format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "MangoGrotesque";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/MangoGrotesque/MangoGrotesque-Medium.woff2")
+		format("woff2");
+}
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+}

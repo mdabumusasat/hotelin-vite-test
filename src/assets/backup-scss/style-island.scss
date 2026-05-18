@@ -1,0 +1,48 @@
+:root {
+  //theme colors
+  --theme-color1: #020214;
+  --theme-color1-rgb: 2, 2, 20;
+  --theme-color2: #966650;
+  --theme-color1-rgb: 150, 102, 80;
+
+  //text heading color
+  --text-color: rgba(2, 2, 20, 0.698);
+  --headings-color: #020214;
+  --review-color: #f7931a;
+  --link-color: var(--headings-color);
+  --link-hover-color: var(--headings-color);
+
+  //font family
+  --heading-font-family: "Beatrice Trial", sans-serif;
+  --body-font-family: "Jost", sans-serif;
+
+  //body
+  --body-font-size: 18px;
+  --body-line-height: 28px;
+  --body-font-weight: 400;
+
+  //heading font size + line-height + weight
+
+  --h1-font-size: 200px;
+  --h2-font-size: 140px;
+  --h3-font-size: 50px;
+  --h4-font-size: 24px;
+  --h5-font-size: 18px;
+  --h6-font-size: 16px;
+
+  --line-height-heading-h1: 180px;
+  --line-height-heading-h2: 140px;
+  --line-height-heading-h3: 50px;
+  --line-height-heading-h4: 36px;
+  --line-height-heading-h5: 32px;
+  --line-height-heading-h6: 28px;
+
+  --h1-font-weight: 500;
+  --h2-font-weight: 500;
+  --h3-font-weight: 500;
+  --h4-font-weight: 500;
+  --h5-font-weight: 500;
+  --h6-font-weight: 500;
+}
+
+@import url("font-beatrice-trial.css");

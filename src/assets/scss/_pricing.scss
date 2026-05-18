@@ -1,0 +1,156 @@
+
+/***
+
+==================================================================
+    Pricing Section Four
+==================================================================
+
+***/
+
+.pricing-section-four{
+  position: relative;
+  padding: 100px 0 120px;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0 40px;
+  }
+}
+
+.pricing-block-four{
+  @include media-breakpoint-down(lg){
+    margin-bottom: 40px;
+  }
+  .inner-box{
+    position: relative;
+    &.active,
+    &:hover {
+      .content-column {
+        .inner-column {
+          background-color: var(--theme-color-black);
+          border-color: var(--theme-color-black);
+          .pricing-amount {
+            border-color: rgba(217, 217, 217, .3);
+            color: var(--theme-color-light);
+            span {
+              color: var(--theme-color-light);
+            }
+          }
+          .list-style-two {
+            li {
+              color: var(--theme-color-light);
+              &:before {
+                color: var(--theme-color-light);
+              }
+            }
+          }
+          .btn-style-four {
+            border: 1px solid var(--theme-color-white);
+            color: var(--theme-color-white);
+          }
+        }
+      }
+    }
+    .content-column{
+      .inner-column{
+        border: 1px solid #e0e0e0;
+        position: relative;
+        padding: 0 40px 40px;
+        z-index: 99;
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: all 0.3s ease;
+        @include media-breakpoint-down(xl){
+          margin-right: -113px;
+        }
+        @include media-breakpoint-down(lg){
+          margin-top: 0;
+        }
+        .pricing-title{
+          background-color: var(--theme-color1);
+          color: var(--theme-color-light);
+          font-family: var(--title-font);
+          font-size: 18px;
+          padding: 6px 19px;
+          display: inline-block;
+          position: relative;
+          &:before {
+            background-color: var(--theme-color1);
+            content: "";
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: -1px;
+            transition: all 0.3s ease;
+          }
+        }
+        .pricing-amount{
+          border-bottom: 1px solid #d9d9d9;
+          font-size: 50px;
+          color: var(--theme-color-black);
+          margin-bottom: 0;
+          margin-top: 29px;
+          padding-bottom: 30px;
+          text-align: center;
+          min-width: 260px;
+          transition: all 0.3s ease;
+          sup {
+            font-size: 24px;
+            top: -17px;
+          }
+          span{
+            font-family: var(--text-font);
+            font-size: 16px;
+            color: var(--text-color);
+            position: relative;
+            top: 10px;
+            margin-left: 7px;
+            transition: all 0.3s ease;
+            &:before {
+              background-color: #a4a4a4;
+              content: "";
+              height: 50px;
+              width: 1px;
+              position: absolute;
+              left: -10px;
+              top: -18px;
+              transform: rotate(-142.1deg);
+              transition: all 0.3s ease;
+            }
+          }
+        }
+        .list-style-two {
+          margin-top: 32px;
+          min-width: 263px;
+          li {
+            margin-bottom: 15px;
+            position: relative;
+            transition: all 0.3s ease;
+            &:before {
+              color: #868686;
+              content: "\f054";
+              font-family: "Font Awesome 6 Pro";
+              font-weight: 900;
+              font-size: 16px;
+              right: 0;
+              position: absolute;
+              transition: all 0.3s ease;
+            }
+            .icon {
+              transition: all 0.3s ease;
+            }
+          }
+        }
+        .book-now{
+          margin-top: 20px;
+        }
+        .btn-style-four {
+          padding: 12px 46px;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

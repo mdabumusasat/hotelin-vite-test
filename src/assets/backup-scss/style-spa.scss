@@ -1,0 +1,22 @@
+//Root
+
+:root {
+  //theme colors
+  --theme-color1: #d35453;
+  --theme-color1-rgb: 211, 84, 83;
+  --theme-color2: #332828;
+
+  --body-bg: #171313;
+
+  //font family
+  --heading-font-family: "Philosopher", sans-serif;
+  --body-font-family: "Roboto", sans-serif;
+
+  --h1-font-size: 72px;
+  --h2-font-size: 50px;
+  --h3-font-size: 34px;
+  --h4-font-size: 30px;
+  --h5-font-size: 24px;
+  --h6-font-size: 20px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");

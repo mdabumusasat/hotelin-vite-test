@@ -1,0 +1,53 @@
+:root {
+  //theme colors
+  --theme-color1: #fdf567;
+  --theme-color1-rgb: 253, 245, 103;
+  --theme-color2: #181820;
+  --theme-color2-rgb: 24, 24, 32;
+
+  //text heading color
+  --text-color: rgba(24, 24, 32, 0.6);
+  --headings-color: #181820;
+
+  --review-color: #f7931a;
+
+  --link-color: var(--headings-color);
+  --link-hover-color: var(--headings-color);
+
+  //font family
+  --heading-font-family: "Lustria", serif;
+  --body-font-family: "Jost", serif;
+
+  //body
+  --body-font-family-size: 18px;
+  --body-line-height: 28px;
+  --body-font-family-weight: 400;
+
+  //heading font size + line-height + weight
+
+  --h1-font-size: 90px;
+  --h2-font-size: 64px;
+  --h2-font-size-mob: 40px;
+  --h3-font-size: 30px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 16px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
+
+.max-width-1720 {
+  max-width: 1720px;
+}
+
+// Section Title For Golf
+.section-title {
+  position: relative;
+  .title {
+    font-family: var(--heading-font-family);
+    font-style: normal;
+    text-transform: capitalize;
+    @media (max-width: 1199.98px) {
+      font-size: var(--h2-font-size-mob);
+    }
+  }
+}

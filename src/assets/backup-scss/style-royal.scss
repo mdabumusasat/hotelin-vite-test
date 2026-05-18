@@ -1,0 +1,37 @@
+//Root
+
+:root {
+  //Default colors
+  --theme-color-white: #ffffff;
+  --theme-color-white-rgb: 255, 255, 255;
+  --theme-color-black: #000;
+  --theme-color-black-rgb: 0, 0, 0;
+  --theme-color-gray: #f6f6f6;
+
+  //theme colors
+  --theme-color1: #9f7d50;
+  --theme-color1-rgb: 159, 125, 80;
+  --theme-color-red: #a44438;
+
+  //text heading color
+  --headings-color: #040618;
+  --headings-color-rgb: 4, 6, 24;
+  --text-color: #4f515d;
+  --dark-color: #181820;
+  --dark-color-rgb: 24, 24, 32;
+
+  --body-bg: #faf5ef;
+
+  //font family
+  --heading-font-family: "Marcellus", serif;
+  --body-font-family: "Jost", serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  --h1-font-size: 72px;
+  --h2-font-size: 50px;
+  --h3-font-size: 34px;
+  --h4-font-size: 30px;
+  --h5-font-size: 24px;
+  --h6-font-size: 20px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");

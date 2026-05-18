@@ -1,0 +1,109 @@
+/* Hotelin | Hotel Booking HTML Template
+
+Template Name: Hotelin
+Version: 1.0.0
+License: copyright commercial
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. Reset
+3. Global Settings
+4. Main Header / TwO
+5. Sticky Header 
+6. Mobile Menu
+7. Section Title
+8. Main Slider
+9. Banner Section
+10. Project Section
+11. Features Section / TwO / Three / Four / Five
+12. About Section / Two
+13. Services Section / Two
+14. Call To Action / Two
+15. FAQ's Sectiom
+16. Marquee Section
+17. Fun Fact Section
+18. Testimonial Section / Two
+19. team Section 
+20, Contact Section / Two
+21. Why Choose Us / Two
+22. News Section / Two
+23. Video Section
+24. Map Section
+25. Clients Section
+26. Main Footer
+**********************************************/
+
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/mixins";
+@import "common/root.scss";
+@import "common/mixing.scss";
+@import "common/loader.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&display=swap");
+
+@import url("aos.css");
+@import url("animate.css");
+// @import url("jquery-ui.css");
+@import url("swiper.min.css");
+@import url("jquery.fancybox.min.css");
+@import url("linear.css");
+@import url("fontawesome-free.css");
+@import url("fontawesome.css");
+@import url("nice-select.css");
+@import url("flaticon.css");
+@import url("tm-bs-mp.css");
+@import url("tm-utility-classes.css");
+
+/*// import SCSS components one by one*/
+@import "reset.scss";
+@import "button.scss";
+@import "animation.scss";
+@import "search-popup.scss";
+@import "accordion.scss";
+@import "discover.scss";
+@import "event.scss";
+@import "faq.scss";
+@import "header.scss";
+@import "mega-menu.scss";
+@import "mobile-menu.scss";
+@import "section-title.scss";
+@import "footer.scss";
+@import "banner.scss";
+@import "checkout.scss";
+@import "about.scss";
+@import "common-class.scss";
+@import "booking.scss";
+@import "destination.scss";
+@import "feature.scss";
+@import "gallery.scss";
+@import "suite.scss";
+@import "room.scss";
+@import "services.scss";
+@import "video.scss";
+@import "funfact.scss";
+@import "explore.scss";
+@import "testimonial.scss";
+@import "team.scss";
+@import "pricing.scss";
+@import "blog.scss";
+@import "instragram.scss";
+@import "nice-select.scss";
+
+/*// *** Rony Sass area here *** //*/
+@import "rony-winter.scss";
+@import "rony-golf.scss";
+@import "rony-spa.scss";
+
+@import "shop/loader.scss";
+
+//inner
+@import "inner/page-title.scss";
+@import "inner/404.scss";
+@import "inner/contact-page.scss";
+@import "inner/service-details.scss";
+@import "inner/project-details.scss";
+@import "inner/news-details.scss";
+@import "inner/news-sidebar.scss";
+@import "inner/news-comment.scss";
+@import "inner/team-details.scss";

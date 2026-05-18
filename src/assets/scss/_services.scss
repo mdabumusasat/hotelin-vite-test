@@ -1,0 +1,879 @@
+/*** 
+
+====================================================================
+  service-section two
+====================================================================
+
+***/
+
+.service-section {
+  padding: 120px 0;
+
+  .service-button {
+    display: inline-block;
+    max-width: 690px;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--theme-color-white);
+    border: 1px solid rgba(var(--theme-color-white-rgb), .1);
+    background-color: transparent;
+    position: relative;    
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      content: "";
+      z-index: -1;
+      background-color: var(--theme-color1);
+      border-radius: inherit;
+      transform: scale(0, 1);
+      transform-origin: top right;
+      transition: -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000), -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    }
+    &:hover:before {
+      transform: scale(1, 1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.service-block {
+  margin-bottom: 30px;
+  .inner-block {
+    background-color: var(--theme-color2);
+    padding: 37px 50px 40px;
+    position: relative;
+    overflow: hidden;
+    @include media-breakpoint-down(sm){
+      padding: 40px;
+    }
+    &:hover {
+      .overlay-content {
+        top: 0;
+      }
+    }
+    .content-box {
+      .icon {
+        color: var(--theme-color1);
+        font-size: 44px;
+        margin-bottom: 75px;
+      }
+      .title {
+        color: var(--theme-color-white);
+        margin-bottom: 0;
+      }
+    }
+  }
+  .overlay-content {
+    padding: 40px 50px 42px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(sm){
+      padding: 20px;
+    }
+    &:before {
+      background-color: rgba(var(--theme-color1-rgb), .9);
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      @include transition(all 300ms ease);
+    }
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -2;
+    }
+    .title {
+      color: var(--theme-color-white);
+      margin-bottom: 10px;
+    }
+    .text {
+      color: var(--theme-color-white);
+      margin-bottom: 26px;
+      text-transform: capitalize;
+      max-width: 350px;
+    }
+    .btn-more {
+      background-color: var(--theme-color-white);
+      color: #1E1B1B;
+      display: inline-block;
+      font-size: 18px;
+      height: 52px;
+      line-height: 52px;
+      width: 65px;
+      text-align: center;
+    }
+  }
+}
+
+/***
+
+==================================================================
+  Service Section Resort
+==================================================================
+
+***/
+
+.service-section-resort {
+  overflow: hidden;
+  background-color: var(--theme-color-gray);
+
+  .service-slider-resort {
+    overflow: hidden;
+  }
+
+  .slider-box {
+    position: relative;
+    z-index: 1;
+    .image {
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      max-width: 740px;
+      width: 100%;
+      padding: 100px;
+      padding-right: 50px;
+      background-color: var(--theme-color-white);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+
+      .title {
+        font-size: 80px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        line-height: 80px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        span{
+          color: rgba(2, 2, 20, 0.3);
+        }
+      }
+
+      @include media-breakpoint-down(xxl) {
+        padding: 30px;
+        max-width: 500px;
+        .title {
+          font-size: 50px;
+          line-height: 50px;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        padding: 30px 15px;
+        max-width: 100%;
+        position: unset;
+        .title {
+          font-size: 36px;
+          line-height: 36px;
+        }
+      }
+    }
+    .arry-btn {
+      width: 150px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      button {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        font-size: 24px;
+        background-color: var(--theme-color-white);
+        transition: all 300ms ease;
+        &:first-child {
+          margin-bottom: 4px;
+        }
+        &:hover {
+          background-color: var(--theme-color1);
+          color: var(--theme-color-white);
+        }
+      }
+      @include media-breakpoint-down(xxl) {
+        width: 100px;
+        button {
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+}
+
+.service-block-resort {
+  .icon {
+    font-size: 80px;
+    color: var(--headings-color);
+    transition: all 300ms ease;
+    i {
+      display: inline-block;
+      transition: all 700ms;
+    }
+  }
+
+  .title {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+  }
+
+  .text {
+    margin-bottom: 0;
+    transition: all 300ms ease;
+  }
+
+  .more-btn {
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--theme-color2);
+    font-size: 16px;
+    border: 1px solid rgba(var(--theme-color1-rgb), 0.14);
+    line-height: 16px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    margin-top: 50px;
+    transition: all 300ms ease;
+    i {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--theme-color2);
+      color: var(--theme-color-white);
+      font-size: 18px;
+      transition: all 300ms ease;
+    }
+    &:hover {
+      i {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  padding: 60px 40px;
+  border: 1px solid rgba(var(--theme-color1-rgb), 0.14);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(2, 2, 20, 0.502);
+    content: "";
+    z-index: -1;
+    transition: all 500ms ease;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease;
+    img {
+      width: 100%;
+      height: 100%;
+      transition: all 3s;
+      object-fit: cover;
+    }
+  }
+
+  &:hover {
+    .icon {
+      color: var(--theme-color-white);
+      i {
+        transform: rotateY(-360deg);
+      }
+    }
+    .title {
+      color: var(--theme-color-white);
+    }
+
+    .text {
+      color: rgba(var(--theme-color-white-rgb), 0.7);
+    }
+
+    .more-btn {
+      background-color: var(--theme-color-white);
+    }
+
+    .image {
+      opacity: 1;
+      visibility: visible;
+      img {
+        transform: scale(1.3) translateX(-30px);
+      }
+    }
+    &::after {
+      right: unset;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+/*** 
+
+====================================================================
+  Golf Service Section
+====================================================================
+
+***/
+
+.golf-serivce{
+  position: relative;
+  .swiper-pagination{
+    position: relative;
+  }
+  .swiper-pagination.swiper-pagination-fraction,
+  .swiper-pagination-current{
+    color: var(--headings-color);
+    font-family: var(--heading-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+  }
+  .swiper-pagination-total{
+    color: var(--headings-color);
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+}
+
+.golf-service-box {
+  position: relative;
+  .image-box{
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 375.98px){
+      height: 235px;
+    }
+    &::before {
+      background: rgba(var(--theme-color2-rgb), 0.5);
+      content: '';
+      inset: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  .inner-box{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.1s ease;
+    width: 100%;
+  }
+  .content-box {
+    align-items: center;
+    color: var(--theme-color-white);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    @include media-breakpoint-down(sm){
+      padding: 30px;
+    }
+    .title {
+      color: var(--theme-color-white);
+      font-family: var(--heading-font-family);
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0.81;
+      margin-bottom: 25px;
+      text-transform: capitalize;
+      @include media-breakpoint-down(xl){
+        font-size: 30px;
+      }
+    }
+    .text {
+      color: rgba(var(--theme-color-white-rgb), 0.8);
+      font-size: 18px;
+      font-family: var(--body-font-family);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.44;
+      margin: 0 auto;
+      max-width: 410px;
+      @include media-breakpoint-down(md){
+        max-width: none;
+      }
+    }
+  }
+  &:hover {
+    .read-more-btn {
+      opacity: 1;
+      transform: translateY(53px);
+      visibility: visible;
+    }
+  }
+  .read-more-btn {
+    background-color: var(--theme-color1);
+    bottom: 0;
+    color: var(--headings-color);
+    left: 0;
+    opacity: 0; 
+    padding: 13px 0px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transform: translateY(0);
+    @include transition(all 300ms ease);
+    visibility: hidden; 
+    width: 100%;
+    a {
+      color: var(--headings-color);
+      display: inline-block;
+      font-family: var(--body-font-family);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 23px;
+      text-decoration: none;
+      @include transition(all 300ms ease);
+    }
+    i{
+      background-color: var(--headings-color);
+      border-radius: 50%;
+      color: var(--theme-color-white);
+      font-size: 10px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      @include transition(all 300ms ease);
+      width: 18px;
+    }
+    &:hover {
+      background-color: var(--theme-color2);
+      color: var(--theme-color-white);
+      a{
+        color: var(--theme-color-white);
+      }
+      i{
+        background-color: var(--theme-color1);
+        color: var(--headings-color);
+      }
+    }
+  }
+}
+.golf-service-slider{
+  .swiper-button-prev,
+  .swiper-button-next{
+    background-color: var(--theme-color-white);
+    border-radius: 50%;
+    color: var(--dark-color);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 40%;
+    width: 50px;
+    @include transition(all 300ms ease);
+    @media (max-width: 1199.98px) {
+      display: none;
+    }
+    &:hover{
+      background-color: var(--theme-color1);
+    }
+    &:after{
+      display: none;
+    }
+  }
+  .swiper-button-prev{
+    left: 300px;
+  }
+  .swiper-button-next{
+    right: 300px;
+  }
+}
+
+/*** 
+
+====================================================================
+  HOME Layout Mountain Style
+====================================================================
+
+***/
+.service-section-mountain {
+  .sec-title {
+    margin-bottom: 60px;
+    max-width: 1000px;
+    @include media-breakpoint-down (md){
+      margin-bottom: 30px;
+    }
+    h2 {
+      line-height: 100%;
+      font-size: 90px;
+      text-transform: uppercase;
+      @include media-breakpoint-down (md){
+        font-size: 60px;
+        .line {
+          display: none;
+        }
+      }
+      @include media-breakpoint-down (sm){
+        font-size: 42px;
+        line-height: 130%;
+      }
+    }
+  }
+}
+.service-wrapper-mountain {
+  .service-text {
+    max-width: 420px;
+    .text{
+      font-weight: 300;
+    }
+  }
+  .royle-btn__text{
+    font-weight: 300;
+  }
+  .theme-btn {
+    margin-top: 150px;
+    max-width: 415px;
+    text-align: left;
+    width: 100%;
+    @include media-breakpoint-down(xxl) {
+      margin-top: 0;
+      max-width: initial;
+      width: 100%;
+    }
+    .royle-btn__text {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+.service-box-items-mountain {
+  background: #15221C;
+  padding: 40px;
+  padding-bottom: 65px;
+  .icon {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+    color: var(--theme-color-white);
+    font-size: 35px;
+    height: 80px;
+    line-height: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 80px;
+
+    i {
+      transition: all 0.4s ease-in-out;
+      display: inline-block;
+    }
+  }
+
+  &:hover {
+    .icon {
+      i {
+         transform: scaleX(-1) !important;
+      }
+    }
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+
+/***
+
+====================================================================
+    Services Section Island
+====================================================================
+
+***/
+
+.services-section-island {
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding-bottom: 400px;
+  }
+  .sec-title-4 {
+    @include media-breakpoint-down(lg){
+      align-items: flex-start;
+    }
+  }
+  .outer-box {
+    position: relative;
+    .text-box {
+      margin-bottom: 39px;
+      max-width: 531px;
+      font-size: 18px;
+      @include media-breakpoint-down(xxl){
+        max-width: 455px;
+      }
+    }
+  }
+}
+
+.service-block-island {
+  margin-bottom: 0;
+  .inner-box {
+    padding-bottom: 14px;
+    display: inline-block;
+    &.active {
+      .title-box {
+        padding: 11px 24px 10px 24px;
+        .title {
+          color: var(--theme-color1);
+          margin-right: 0;
+        }
+        .icon-box {
+          color: var(--theme-color1);
+          width: 0;
+          transform: scaleX(0);
+        }
+      }
+      .image-box {
+        &.active {
+          display: block;
+          .image {
+            img {
+              opacity: 1;
+              animation: anim-inactive-image .8s forwards cubic-bezier(.4,0,.2,1);
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      .title-box {
+        cursor: pointer;
+        .title {
+          color: var(--theme-color1);
+        }
+        .icon-box {
+          color: var(--theme-color1);
+        }
+      }
+    }
+    .title-box {
+      display: inline-flex;      
+      background-color: var(--theme-color-black);
+      padding: 11px 42px 10px 24px;
+      border-radius: 40px;
+      .title {
+        color: var(--theme-color-white);
+        font-family: var(--title-font);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        margin-right: 10px;
+        @include transition(all 300ms ease);
+        &:hover {
+          color: var(--theme-color1);
+        }
+      }
+      .icon-box {
+        color: var(--theme-color-white);
+        font-size: 18px;
+        line-height: 1;
+        position: relative;
+        top: 0;
+        width: 0;
+        transform: scaleX(1);
+        @include transition(all 300ms ease);
+      }
+    }
+    .image-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      width: 100%;
+      transition: opacity 0.3s;
+      @include media-breakpoint-down(lg){
+        bottom: -20px;
+        left: 0;
+        right: auto;
+        top: auto;
+      }
+      .image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        margin-bottom: 0;
+        max-width: 410px;
+        img {
+          position: relative;
+          opacity: 0;
+          transition: opacity 0.3s;
+          width: 100%;
+          height: 100%;
+          -webkit-mask-image: url(../images/resource/service-islandmask.png);
+          -webkit-mask-size: contain;
+          -webkit-mask-position: center center;
+          -webkit-mask-repeat: no-repeat;
+        }
+      }
+      .image-one {
+        overflow: hidden;
+        right: 0;
+        @include media-breakpoint-down(lg){
+          right: auto;
+        }
+      }
+    }
+  }
+}
+
+
+
+/***
+====================================================================
+  Why Choose Us Reservation Layout
+====================================================================
+***/
+
+.why-choose-rsrv{
+  position: relative;
+  .outer-box2{
+    background-color: #3B2417;
+    border-radius: 40px;
+    margin: 0 auto;
+    max-width: 1840px;
+    padding: 120px 0;
+    width: 100%;
+  }
+}
+
+.service-block-rsrv{
+  .inner-block{
+    background: #45291A;
+    border: 1px solid #6D3F24;
+    border-radius: 20px;
+    padding: 50px;
+    position: relative;
+    .icon-box{
+      align-items: start;
+      display: inline-flex;
+      font-size: 55px;
+      line-height: 1.42;
+      margin-bottom: 50px;
+      .img2{
+        opacity: 0.1;
+        position: absolute;
+        right: 50px;
+        width: 100px;
+        top: 50px;
+      }
+      .icon2{
+        font-size: 110px;
+        opacity: 0.1;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+      }
+      i,
+      img{
+        color: #C4805A;
+        @include transition(all 400ms ease);
+      }
+    }
+    &:hover{
+      .icon-box{
+        i,
+        img{
+          transform: scaleX(-1);
+        }
+      }
+    }
+    .content-box{
+      .title{
+        color: var(--theme-color-white);
+        margin-bottom: 14px;
+      }
+      .text{
+        color: #9C877B;
+        margin-bottom: 40px;
+      }
+      .read-more-btn{
+        align-items: center;
+        display: flex;
+        span{
+          color: var(--theme-color-white);
+          text-decoration: underline;
+        }
+        i,
+        img{
+          margin-left: 5px;
+          @include transition(all 400ms ease);
+        }
+        &:hover{
+          i,
+          img{
+            color: #C4805A;
+            transform: scaleY(-1);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+//Root
+
+:root {
+  //theme colors
+  --theme-color1: #eca549;
+  --theme-color1-rgb: 236, 165, 73;
+
+  //text heading color
+  --headings-color: #181820;
+  --headings-color-rgb: 24, 24, 32;
+
+  --body-bg: #ffffff;
+
+  //font family
+  --heading-font-family: "Montserrat", sans-serif;
+
+  --h1-font-size: 72px;
+  --h2-font-size: 50px;
+  --h3-font-size: 36px;
+  --h4-font-size: 30px;
+  --h5-font-size: 24px;
+  --h6-font-size: 20px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");

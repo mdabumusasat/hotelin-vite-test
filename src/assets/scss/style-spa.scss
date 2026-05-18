@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "common/mixing.scss";
+//include mixing to convert hexToRGB
+@function hexToRGB($color) {
+	@return red($color), green($color), blue($color);
+}
+//main theme colors
+$theme-color1: #d35453;
+$theme-color2: #332828;
+
+//text colors when theme color bg
+$theme-color1-text-color: #fff;
+$theme-color2-text-color: #fff;
+
+:root {
+	//main theme colors
+	--theme-color1: #{$theme-color1};
+	--theme-color2: #{$theme-color2};
+
+	//rgb version of those theme colors
+	--theme-color1-rgb: #{hexToRGB($theme-color1)};
+	--theme-color2-rgb: #{hexToRGB($theme-color2)};
+
+	//text colors when theme color bg
+	--theme-color1-text-color: #{$theme-color1-text-color};
+	--theme-color2-text-color: #{$theme-color2-text-color};
+
+	//other colors
+	--body-bg: #171313;
+
+	//font family
+	--heading-font-family: "Philosopher", sans-serif;
+}
+
+.about-section-royal {
+	.section-wrapper {
+		.section-title {
+			color: var(--theme-color-white);
+		}
+	}
+	.section-paragraph {
+		color: rgba(var(--theme-color-white-rgb), .6);;
+	}
+	.about-bg-shape-1 {
+		left: 50px;
+	}
+}
+
+.banner-area-spa .banner-btn-box {
+	@media (max-width: 1199.98px) {
+		justify-content: center;
+	}
+}

@@ -1,0 +1,215 @@
+/***
+
+==================================================================
+    Funfact Section 
+==================================================================
+
+***/
+
+.fanfact-section {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 300px 0;
+    &.style-royal {
+        background-color: #FAF5EF;
+        padding-bottom: 245px;
+        @include media-breakpoint-down(xl) {
+            padding-bottom: 60px;
+        }
+    }
+    .outer-box {
+        max-width: 1588px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 80px 0;
+    }
+}
+
+.fanfact-block {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    @include media-breakpoint-down(xl) {
+        &::after {
+            display: none;
+        }
+        border: 1px solid rgba(var(--dark-color-rgb), 0.1);
+        padding: 30px 15px;
+    }
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgba(var(--dark-color-rgb), 0.1);
+        content: "";
+        width: 367px;
+        height: 367px;
+        border-radius: 50%;
+    }
+    .title {
+        font-size: 100px;
+        line-height: 120px;
+        text-transform: uppercase;
+        color: var(--dark-color);
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        text-transform: capitalize;
+        color: var(--dark-color);
+        font-size: 16px;
+    }
+}
+
+/***
+
+==================================================================
+    Funfact Section Two
+==================================================================
+
+***/
+
+.funfact-section-two {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 140px 0;
+
+    @include media-breakpoint-down(xl) {
+        padding: 80px 0;
+    }
+}
+
+.funfact-block-two {
+    border: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+    padding: 6px 39px 30px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    @include transition(all 300ms ease);
+    &:hover {
+        background-color: var(--theme-color2);
+        border-color: var(--theme-color2);
+        .sub-title {
+            color: var(--theme-color-white);
+        }
+    }
+    .title {
+        font-size: 80px;
+        line-height: 120px;
+        color: var(--theme-color-white);
+        margin-bottom: 41px;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        display: block;
+        text-transform: capitalize;
+        color: rgba(var(--theme-color-white-rgb), .6);
+        font-size: 16px;
+        text-align: right;
+        @include transition(all 300ms ease);
+    }
+}
+
+/***
+
+==================================================================
+    Fanfact Section Resort
+==================================================================
+
+***/
+
+.fanfact-section-resort {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 300px 0;
+    background-attachment: fixed;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(4, 6, 24, 0.502);
+        content: "";
+        z-index: -1;
+    }
+    .outer-box {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 80px 0;
+    }
+}
+
+.fanfact-block-resort {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .title {
+        font-size: 120px;
+        line-height: 120px;
+        text-transform: uppercase;
+        color: var(--theme-color-white);
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        text-transform: capitalize;
+        color: var(--theme-color-white);
+        font-size: 20px;
+    }
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgba(var(--theme-color-white-rgb), 0.2);
+        content: "";
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &::after {
+            display: none;
+        }
+        border: 1px solid rgba(var(--theme-color-white-rgb), 0.2);
+        padding: 153px 30px;
+        border-radius: 50%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 93px 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 183px 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 73px 30px;
+        height: 296px;
+        width: 296px;
+        margin: 0 auto;
+    }
+}

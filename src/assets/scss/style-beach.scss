@@ -1,0 +1,71 @@
+//include mixing to convert hexToRGB
+@import "common/mixing.scss";
+@function hexToRGB($color) {
+  @return red($color), green($color), blue($color);
+}
+//main theme colors
+$theme-color1: #53624e;
+$theme-color2: #040618;
+$theme-color3: #eaede4;
+
+//text colors when theme color bg
+$theme-color1-text-color: #fff;
+$theme-color2-text-color: #fff;
+$theme-color3-text-color: #fff;
+
+:root {
+  //main theme colors
+  --theme-color1: #{$theme-color1};
+  --theme-color2: #{$theme-color2};
+  --theme-color3: #{$theme-color3};
+
+  //rgb version of those theme colors
+  --theme-color1-rgb: #{hexToRGB($theme-color1)};
+  --theme-color2-rgb: #{hexToRGB($theme-color2)};
+  --theme-color3-rgb: #{hexToRGB($theme-color3)};
+
+  //text colors when theme color bg
+  --theme-color1-text-color: #{$theme-color1-text-color};
+  --theme-color2-text-color: #{$theme-color2-text-color};
+  --theme-color3-text-color: #{$theme-color3-text-color};
+
+  //text heading color
+  --text-color: rgba(4, 6, 24, 0.7);
+  --headings-color: var(--theme-color2);
+
+  //font family
+  --heading-font-family: "Romans Story Demo", serif;
+
+  //body
+  --body-font-size: 18px;
+  --body-line-height: 28px;
+  --body-font-weight: 400;
+
+  //heading font size + line-height + weight
+
+  --h1-font-size: 140px;
+  --h2-font-size: 50px;
+  --h3-font-size: 34px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 18px;
+
+  --h1-font-weight: 400;
+  --h2-font-weight: 400;
+
+  --h3-font-weight: 500;
+  --h4-font-weight: 500;
+  --h5-font-weight: 500;
+  --h6-font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Romans Story Demo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Romans-Story.otf") format("otf");
+}
+.footer-style-one {
+  background-color: var(--theme-color1);
+}

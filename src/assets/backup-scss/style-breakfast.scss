@@ -1,0 +1,22 @@
+//Root
+
+:root {
+  //theme colors
+  --theme-color1: #a44438;
+  --theme-color1-rgb: 164, 68, 56;
+  --theme-color2: #9f7d50;
+
+  --body-bg: #f4efed;
+
+  //font family
+  --body-font-family: "Roboto", sans-serif;
+
+  --h1-font-size: 72px;
+  --h2-font-size: 50px;
+  --h3-font-size: 34px;
+  --h4-font-size: 30px;
+  --h5-font-size: 24px;
+  --h6-font-size: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");

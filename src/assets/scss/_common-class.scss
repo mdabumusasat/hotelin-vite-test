@@ -1,0 +1,36 @@
+// Background
+.theme-bg {
+     background: var(--theme-color1);
+}
+.theme-bg-white {
+     background: var(--theme-color-white);
+}
+.theme-bg-black {
+     background: var(--theme-color-black);
+}
+.theme-bg-heading {
+     background: var(--headings-color);
+}
+
+
+// Color
+.theme-color {
+     color: var(--theme-color1);
+}
+.theme-color-white {
+     color: var(--theme-color-white);
+}
+.theme-color-black {
+     color: var(--theme-color-black);
+}
+.theme-color-heading {
+     color: var(--headings-color);
+}
+
+// Svg Image Color Change
+.filter-white {
+     filter: brightness(0) invert(1);
+}
+.filter-black {
+     filter: brightness(1) invert(0);
+}

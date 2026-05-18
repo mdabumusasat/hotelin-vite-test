@@ -1,0 +1,171 @@
+// Spa Contact Section start here ***
+.contact-section-spa {
+	overflow: hidden;
+	.contact-form {
+		height: 100%;
+		.form-group {
+			margin-bottom: 0;
+		}
+		padding: 100px;
+		background-color: var(--theme-color2);
+		@include media-breakpoint-down(xl) {
+			padding: 80px 30px;
+		}
+		@include media-breakpoint-down(md) {
+			padding: 60px 12px;
+		}
+
+		input {
+			height: 45px;
+			background-color: transparent;
+			color: var(--theme-color-white);
+			border: 1px solid rgba(255, 255, 255, 0.102);
+		}
+		.nice-select {
+			border: 1px solid rgba(255, 255, 255, 0.102);
+			border-radius: 0;
+			height: 45px;
+			background-color: transparent;
+			line-height: 45px;
+			.current {
+				color: rgba(255, 255, 255, 0.6);
+			}
+			&::before {
+				color: var(--theme-color-white);
+				top: 0;
+			}
+		}
+		textarea {
+			height: 200px;
+			background-color: transparent;
+			color: var(--theme-color-white);
+			border: 1px solid rgba(255, 255, 255, 0.102);
+		}
+		.theme-btn {
+			color: var(--theme-color-black);
+			border-radius: 0;
+			padding: 14px;
+			justify-content: center;
+		}
+	}
+	.image-column {
+		.inner-column {
+			height: 100%;
+			.image {
+				height: 100%;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+// Spa Contact Section end here ***
+
+// Spa Footer Section start here ***
+.footer-style-spa {
+	&.style-2 {
+		background-color: var(--theme-color3);
+		.footer-bottom .copyright-text {
+			color: #FFFFFF99;
+		}
+		.footer-widget {
+			@include media-breakpoint-down(lg){
+				text-align: center;
+			}
+		}
+		.footer-column .footer-widget .socials {
+			@include media-breakpoint-down(lg){
+				margin-top: 30px;
+			}
+		}
+	}
+	.widgets-section {
+		padding: 100px 0 80px;
+		border-top: 1px solid rgba(255, 255, 255, 0.141);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.141);
+	}
+	.footer-column {
+		.footer-widget {
+			.footer-logo {
+				display: block;
+				max-width: 382px;
+				margin: 0 auto;
+				img {
+					width: 100%;
+				}
+			}
+			.socials {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				justify-content: center;
+				margin-top: 100px;
+				@include media-breakpoint-down(lg){
+					margin-top: 30px;
+				}
+				a {
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					border: 1px solid rgba(255, 255, 255, 0.141);
+					color: rgba(255, 255, 255, 0.6);
+					transition: 0.3s;
+					&:hover {
+						background-color: var(--theme-color1);
+						color: var(--theme-color2);
+					}
+				}
+			}
+			.widget-title {
+				color: var(--theme-color-white);
+				margin-bottom: 20px;
+			}
+			.widget-content {
+				ul {
+					li {
+						color: var(--theme-color-white);
+					}
+				}
+			}
+		}
+	}
+	.footer-top {
+		padding: 40px 0;
+		.title {
+			color: var(--theme-color-white);
+			margin: 0;
+		}
+		.inner-container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+		}
+	}
+	.footer-bottom {
+		padding: 20px 0;
+		.inner-container {			
+			@include media-breakpoint-down(sm){
+				justify-content: center;
+			}
+		}
+		ul {
+			li {
+				color: rgba(255, 255, 255, 0.6);
+				a {
+					color: rgba(255, 255, 255, 0.6);
+					&:hover {
+						color: var(--theme-color-white);
+					}
+				}
+			}
+		}
+	}
+}
+// Spa Footer Section end here ***

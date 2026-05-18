@@ -1,0 +1,238 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+
+.section {
+  &-title {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.20;
+    @include media-breakpoint-down(lg){
+      font-size: 40px;
+    }
+    .title {
+      @include media-breakpoint-down(lg){
+        font-size: 40px;
+      }
+      br {
+        @media (max-width: 1399.98px) {
+          display: none;
+        }
+      }
+    }
+    &.light {
+      .title {
+        color: var(--theme-color-white);
+      }
+    }
+  }
+  &-paragraph {
+    font-size: 18px;
+    line-height: 156%;
+    margin: 24px 0 31px;
+  }
+}
+
+.section-2 {
+  &-title {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.20;
+  }
+  & small {
+    font-size: 18px;
+    line-height: 156%;
+    margin: 24px 0 31px;
+  }
+}
+.sec-title {
+  .title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    @include media-breakpoint-down(lg) {
+      font-size: 70px;
+      line-height: 80px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 46px;
+      line-height: 50px;
+    }
+  }
+  &.light {
+    .title {
+      color: var(--theme-color-white);
+    }
+  }
+}
+
+
+.section-breakfast {
+  &-wrapper {
+    margin-bottom: 56px;
+  }
+  &-title {
+    font-size: var(--h2-font-size);
+    font-weight: 400;
+    line-height: 1.123;
+    margin-bottom: 0;
+    margin-top: -6px;
+    text-transform: uppercase;
+    @include media-breakpoint-down(xl){
+      font-size: 70px;
+    }
+    @include media-breakpoint-down(lg) {
+      font-size: 56px;
+      line-height: 80px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &.light {
+      .title {
+        color: var(--theme-color-white);
+      }
+    }
+  }
+}
+
+.sec-title-3 {
+  .sub-title {
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: 500;
+    font-family: var(--headings-color);
+    margin-bottom: 10px;
+    .icon {
+      font-size: 14px;
+      color: var(--theme-color-white);
+      background-color: var(--theme-color-black);
+      border-radius: 20px;
+      line-height: 24px;
+      width: 44px;
+      height: 24px;
+      text-align: center;
+      margin-left: 5px;
+    }
+  }
+  .title {
+    text-transform: uppercase;
+  }
+}
+
+.sec-title-4 {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 50px;
+  @include media-breakpoint-down(lg){
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .sub-title {
+    border-bottom: 1px solid #04061824;
+    display: inline-block;
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-bottom: 8px;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 16px;
+    }
+    img {
+      bottom: -21px;
+      position: absolute;
+      right: -10px;
+    }
+  }
+  .title {
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: -5%;
+    line-height: 110px;
+    text-transform: uppercase;
+    @media (max-width: 1646.98px) {
+      font-size: 63px;
+      line-height: 80px;
+    }
+    @include media-breakpoint-down(xxl){
+      font-size: 43px;
+      line-height: 60px;
+    }
+    @include media-breakpoint-down(lg){
+      br {
+        display: none;
+      }
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 28px;
+      line-height: 43px;
+    }
+    .style-color {
+      color: #B6BCC2;
+    }
+    .style-one {
+      margin-left: 180px;
+      @include media-breakpoint-down(xxl){
+        margin-left: 140px;
+      }
+      @include media-breakpoint-down(lg){
+        margin-left: 0;
+      }
+    }
+    .style-two {
+      margin-left: 30px;
+      @include media-breakpoint-down(xxl){}
+      @include media-breakpoint-down(lg){
+        margin-left: 0;
+      }
+    }
+    .style-three {
+      margin-left: 420px;
+      @media (max-width: 1646.98px) {
+        margin-left: 290px;
+      }
+      @include media-breakpoint-down(xxl){
+        margin-left: 190px;
+      }
+      @include media-breakpoint-down(lg){
+        margin-left: 0;
+      }
+    }
+    .style-four {
+      margin-left: 100px;
+      @include media-breakpoint-down(xxl){
+        margin-left: 70px;
+      }
+      @include media-breakpoint-down(lg){
+        margin-left: 0;
+      }
+    }
+  }
+  &.light {
+    .sub-title {
+      border-color: #FFFFFF24;
+      color: var(--theme-color-white);
+      img {
+        filter: invert(1);
+      }
+    }
+    .title {
+      color: var(--theme-color-white);
+    }
+  }
+}

@@ -1,0 +1,132 @@
+@function hexToRGB($color) {
+	@return red($color), green($color), blue($color);
+}
+//Root
+
+//main theme colors
+$theme-color1: #a48361;
+$theme-color2: #0e0e0e;
+$theme-color3: #a44438;
+$theme-color4: #9D603F;
+
+//text colors when theme color bg
+$theme-color1-text-color: #fff;
+$theme-color2-text-color: #fff;
+$theme-color3-text-color: #fff;
+$theme-color4-text-color: #fff;
+
+:root {
+	//main theme colors
+	--theme-color1: #{$theme-color1};
+	--theme-color2: #{$theme-color2};
+	--theme-color3: #{$theme-color3};
+	--theme-color4: #{$theme-color4};
+
+	//rgb version of those theme colors
+	--theme-color1-rgb: #{hexToRGB($theme-color1)};
+	--theme-color2-rgb: #{hexToRGB($theme-color2)};
+	--theme-color3-rgb: #{hexToRGB($theme-color3)};
+	--theme-color4-rgb: #{hexToRGB($theme-color4)};
+
+	//text colors when theme color bg
+	--theme-color1-text-color: #{$theme-color1-text-color};
+	--theme-color2-text-color: #{$theme-color2-text-color};
+	--theme-color3-text-color: #{$theme-color3-text-color};
+	--theme-color4-text-color: #{$theme-color4-text-color};
+
+	//other colors
+	--body-bg: #fff;
+	--theme-color-white: #ffffff;
+	--theme-color-white-rgb: 255, 255, 255;
+	--theme-color-light: #f2f8f9;
+	--theme-color-gray: #f6f6f6;
+	--theme-color-silver: #eee;
+	--theme-color-black: #000000;
+	--theme-color-black-rgb: 0, 0, 0;
+
+	//text heading color
+	--text-color: #4f515d;
+	--headings-color: #040618;
+	--headings-color-rgb: 4, 6, 24;
+	--link-color: var(--theme-color1);
+	--link-hover-color: var(--theme-color2);
+
+	//font family
+	--heading-font-family: "Marcellus", serif;
+	--body-font-family: "Jost", serif;
+
+	//body
+	--body-font-size: 16px;
+	--body-line-height: 1.75;
+	--body-font-weight: 400;
+
+	//heading font size + weight
+	--line-height-heading-h1: 1.2em;
+	--line-height-heading: 1.2;
+	--line-height-heading-small: 1.35em;
+
+	--h1-font-size: 72px;
+	--h2-font-size: 50px;
+	--h3-font-size: 36px;
+	--h4-font-size: 24px;
+	--h5-font-size: 22px;
+	--h6-font-size: 20px;
+
+	--h1-font-weight: 400;
+	--h2-font-weight: 400;
+	--h3-font-weight: 400;
+	--h4-font-weight: 400;
+	--h5-font-weight: 400;
+	--h6-font-weight: 400;
+
+	//section sub title
+	--sec-title-subtitle-font-size: 16px;
+	--sec-title-subtitle-color: var(--text-color);
+	--sec-title-subtitle-font-family: var(--heading-font-family);
+	--sec-title-subtitle-font-weight: 600;
+	--sec-title-subtitle-line-height: 1em;
+
+	//section title
+	--sec-title-color: var(--headings-color);
+	--sec-title-font-size: var(--h2-font-size);
+	--sec-title-font-family: var(--heading-font-family);
+	--sec-title-font-weight: var(--h2-font-weight);
+
+	//news details page
+	--theme-light-background: #f1f3f3;
+	--theme-light-background-text-color: var(--headings-color);
+	--theme-black: #131313;
+
+	//container
+	--container-width: 1200px;
+	--small-container-width: 1000px;
+	--large-container-width: 1750px;
+	--container-pt: 0px;
+	--container-pb: 0px;
+
+	// Gradient 1
+	--gradient-1: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.8) 0%,
+		rgba(0, 0, 0, 0.64) 42%,
+		rgba(0, 0, 0, 0.32) 100%
+	);
+	--gradient-2: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+	--gradient-3: linear-gradient(
+		275.66deg,
+		rgba(0, 0, 0, 0.95) 5.7%,
+		#1a1a1a 45.93%
+	);
+	--gradient-4: linear-gradient(
+		180.01deg,
+		rgba(255, 255, 255, 0.8) -14.64%,
+		rgba(83, 98, 78, 0) 96.23%
+	);
+
+	//text heading color
+	--dark-color: #181820;
+	--dark-color-rgb: 24, 24, 32;
+	--dark-green: #53624e;
+	--dark-green-rgb: 83 98 78;
+	--review-color: #f7931a;
+}
