@@ -1,14 +1,14 @@
 import React from "react";
 import Layout from '../layouts/Layout';
-import Banner from "../section/home2/Banner";
-import Checkout from "../section/home2/Checkout";
-import About from "../section/home2/About";
-import RoomSuites from "../section/home2/RoomSuites";
-import Service from "../section/home2/Service";
-import Hotel from "../section/home2/Hotel";
-import Testimonial from "../section/home2/Testimonial";
-import Mountain from "../section/home2/Mountain";
-import News from "../section/home2/News";
+import Banner from "../section/Home2/Banner";
+import Checkout from "../section/Home2/Checkout";
+import About from "../section/Home2/About";
+import RoomSuites from "../section/Home2/RoomSuites";
+import Service from "../section/Home2/Service";
+import Hotel from "../section/Home2/Hotel";
+import Testimonial from "../section/Home2/Testimonial";
+import Mountain from "../section/Home2/Mountain";
+import News from "../section/Home2/News";
 
 function Home2() {
     return (
