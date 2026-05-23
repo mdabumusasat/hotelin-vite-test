@@ -4,7 +4,7 @@ import PageTitle from "../section/PageTitle";
 import About from "../section/Home1/About";
 import Funfact from "../section/About/Funfact";
 import Service from "../section/About/Service";
-import Testimonial from "../section/about/Testimonial";
+import Testimonial from "../section/About/Testimonial";
 
 function AboutUs() {
 
